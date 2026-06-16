@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-gold: #D4AF37;
+  --color-brand-blue: #2563EB;
+
+  /* Change white color (previously #ffffff) to a premium deep forest/pine green */
+  --color-white: #10321c;
+  
+  /* Change black color (previously #000000) to pristine white */
+  --color-black: #ffffff;
+
+  /* Redefine all standard gray and neutral levels to match the green/white palette */
+  --color-gray-50: #0a1f11;
+  --color-gray-55: #112d1c;
+  --color-gray-100: #194027;
+  --color-gray-150: #225333;
+  --color-gray-200: #2d6b42;
+  --color-gray-300: #408d59;
+  --color-gray-400: #81cf9b;
+  --color-gray-450: #a7deb7;
+  --color-gray-500: #bde7cb;
+  --color-gray-550: #d1ebd9;
+  --color-gray-600: #e2f0e7;
+  --color-gray-700: #f4fbf7;
+  --color-gray-800: #ffffff;
+  --color-gray-900: #ffffff;
+  --color-gray-950: #ffffff;
+
+  --color-neutral-50: #0a1f11;
+  --color-neutral-100: #194027;
+  --color-neutral-350: #81cf9b;
+  --color-neutral-400: #a7deb7;
+  --color-neutral-450: #bde7cb;
+  --color-neutral-800: #225333;
+  --color-neutral-850: #1d462c;
+  --color-neutral-900: #ffffff;
+  --color-neutral-950: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1f11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e2f0e7;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #0a1f11;
+}
+
+/* Custom global overrides to ensure explicit hex codes follow the green and white aesthetic */
+
+body {
+  background-color: #0a1f11 !important;
+  color: #ffffff !important;
+}
+
+/* Main backdrop areas */
+.bg-\[\#f9f9f9\] {
+  background-color: #0a1f11 !important;
+}
+
+.dark\:bg-\[\#080808\] {
+  background-color: #07160c !important;
+}
+
+.dark\:bg-\[\#0B0B0B\] {
+  background-color: #07160c !important;
+}
+
+.dark\:bg-\[\#0E0E0E\] {
+  background-color: #07160c !important;
+}
+
+/* Bento Cards and panels */
+.bg-white {
+  background-color: #10321c !important;
+}
+
+.dark\:bg-\[\#121212\] {
+  background-color: #10321c !important;
+}
+
+.dark\:bg-\[\#1a1a1a\] {
+  background-color: #164225 !important;
+}
+
+.dark\:bg-\[\#202020\] {
+  background-color: #1c522f !important;
+}
+
+/* Text components */
+.text-black {
+  color: #ffffff !important;
+}
+
+.text-white {
+  color: #10321c !important;
+}
+
+.text-\[\#111111\] {
+  color: #ffffff !important;
+}
+
+.text-gray-900 {
+  color: #ffffff !important;
+}
+
+.text-gray-950 {
+  color: #ffffff !important;
+}
+
+/* Correct contrast for helper descriptions and grays */
+.text-gray-400 {
+  color: #a7deb7 !important;
+}
+
+.text-gray-500 {
+  color: #bde7cb !important;
+}
+
+.text-gray-600 {
+  color: #e2f0e7 !important;
+}
+
+/* Background buttons and solid panels */
+.bg-black {
+  background-color: #ffffff !important;
+}
+
+.dark\:bg-white {
+  background-color: #10321c !important;
+}
+
+.hover\:bg-black:hover {
+  background-color: #f4fbf7 !important;
+}
+
+.bg-gray-100 {
+  background-color: #164225 !important;
+}
+
+.bg-gray-50 {
+  background-color: #1c522f !important;
+}
+
+/* Borders */
+.border-gray-100 {
+  border-color: #215434 !important;
+}
+
+.border-gray-150 {
+  border-color: #2a6640 !important;
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}
+
+.dark\:border-neutral-850 {
+  border-color: #2a6640 !important;
+}
+
+.hover\:border-gray-150:hover {
+  border-color: #81cf9b !important;
+}
+
+/* Search input specific color overrides */
+input::placeholder {
+  color: #a7deb7 !important;
+}
+
+input {
+  color: #ffffff !important;
+  border-color: #2a6640 !important;
+}
+
+/* Custom Animation Utility classes */
+.blur-load {
+  filter: blur(10px);
+  transition: filter 0.5s ease-out;
+}
+
+.blur-load.loaded {
+  filter: blur(0);
+}
+
+

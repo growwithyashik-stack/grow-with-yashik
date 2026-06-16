@@ -1,0 +1,6 @@
+{
+  "name": "FYTNI - Premium Fashion Store",
+  "description": "Modern, luxury eCommerce clothing storefront for FYTNI. Wear Confidence, Define Your Style.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
